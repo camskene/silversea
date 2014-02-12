@@ -1,0 +1,59 @@
+#destinations {
+    .row {
+        @include clearfix;
+        margin: 0 0 48px;
+    }
+    section {
+        float: left;
+        width: 360px;
+        &:nth-child(3n+2) {
+            margin: 0 22px;
+        }
+        & > a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            figure {
+                transition: all 0.2s linear
+            }
+            &:hover > figure {
+                -webkit-transform: scale(1.04);
+                transform: scale(1.04);
+            }
+        }
+
+    }
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        margin: 0 0 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    figure {
+        margin: 0 0 18px;
+    }
+    .description {
+        padding: 0 0 0 3px;
+    }
+}
+
+#destinations-single {
+    width: 940px;
+    margin: 0 auto;
+    .description {
+        margin: 0 0 72px;
+        font-size: 16px;
+        line-height: 24px;
+        &:before {
+            content: "";
+            display: block;
+            width: 720px;
+            height: 0;
+            margin: 0 auto 36px;
+            border-top: 1px solid #d3d3d3;
+        }
+    }
+}
+

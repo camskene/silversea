@@ -1,0 +1,30 @@
+#skyline {
+    @include clearfix;
+    padding: 3px 0;
+    background-color: #d3d3d3;
+    .content {
+        @include table-layout;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        ul {
+            @include inline-list;
+            text-align: right;
+            font-size: 12px;
+            li {
+                margin-left: 60px;
+                text-transform: uppercase;
+                &:before {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

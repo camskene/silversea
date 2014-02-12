@@ -1,0 +1,82 @@
+/*----------------------------------------------------------------
+    Common
+----------------------------------------------------------------*/
+
+input, textarea, select {
+    @include box-sizing(content-box);
+}
+
+/*----------------------------------------------------------------
+    Plan Voyage
+----------------------------------------------------------------*/
+
+#plan-voyage {
+    position: relative;
+    margin: -42px auto 0;
+    z-index: 1000;
+    form {
+        @include table-layout;
+        width: auto;
+        margin: 0 auto;
+        background: transparent;
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+            line-height: 1;
+        }
+        & > * {
+            padding: 0 10px;
+            background-color: #fff;
+            &:first-child,
+            &:last-child {
+                padding: 0 20px;
+                border-radius: 4px 0 0 4px;
+            }
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------
+    Lowest Rates
+----------------------------------------------------------------*/
+
+#lowest-rates {
+    padding: 48px 0 72px;
+    text-align: center;
+    h2 {
+        margin: 0 0 10px;
+        font-size: 36px;
+    }
+    h2 + p {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    form {
+        @include table-layout;
+        width: auto;
+        margin: 0 auto;
+    }
+    input {
+        padding: 8px;
+        border: 1px solid #d3d3d3;
+        width: 300px;
+        font-size: 18px;
+        color: #a1a1a1;
+        &:focus {
+            color: #000;
+            outline: 0;
+        }
+    }
+    [type="submit"] {
+        width: 136px;
+        padding: 5px;
+        border: 3px solid #fff;
+        margin-left: 20px;
+        background-color: #00a3e6;
+        box-shadow: 0 0 1px 0 #222;
+        color: #fff;
+    }
+}

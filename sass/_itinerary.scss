@@ -1,0 +1,133 @@
+.itinerary-header {
+    padding: 36px 0 48px;
+    text-align: center;
+    background: url(images/shadow-one.png) no-repeat 50% 0%;
+    text-align: center;
+    .category {
+        margin: 0;
+        font-size: 24px;
+    }
+    .route {
+        margin: 14px 0;
+        line-height: 1;
+        font-size: 36px;
+        font-weight: 300;
+    }
+    .voyage-id {
+        font-size: 12px;
+    }
+    .details {
+        @include table-layout;
+        width: 80%;
+        padding: 14px 0;
+        border: 1px solid #d3d3d3;
+        border-width: 1px 0;
+        margin: 0 auto 18px;
+        text-align: center;
+        li {
+            width: 33%;
+            vertical-align: middle;
+            p {
+                display: inline-block;
+                position: relative;
+                padding-left: 42px;
+                margin: 0;
+                font-size: 21px;
+            }
+            p:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-right: 0;
+                font-size: 36px;
+                vertical-align: top;
+            }
+            span {
+                display: block;
+                font-size: 11px;
+                text-align: left;
+                color: #7f7f7f;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.itinerary {
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    table {
+        width: 720px;
+        margin: 0 auto 100px;
+        thead {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        tr {
+            border: 1px solid #e6e6e6;
+            border-width: 1px 0 0;
+            td {
+                padding: 12px 0;
+                font-size: 14px;
+            }
+            td:first-child {
+                padding-left: 30px;
+            }
+        }
+        thead tr:first-child {
+            border: 0;
+        }
+    }
+}
+
+.suites {
+    margin: 0 0 60px;
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+    .row {
+        margin: 0 0 48px;
+        text-align: center;
+    }
+    section {
+        display: inline-block;
+        width: 340px;
+        vertical-align: top;
+    }
+    section:nth-child(3n+2) {
+        margin: 0 40px;
+    }
+    figure {
+        padding: 9px;
+        border: 1px solid #d3d3d3;
+    }
+    .request-quote {
+        position: relative;
+        top: -20px;
+        display: block;
+        max-width: 150px;
+        margin: 0 auto;
+        padding: 6px 12px;
+        color: #fff;
+        font-size: 12px;
+        background-color: #00a3e6;
+        text-decoration: none;
+        text-align: center;
+    }
+    .suite-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    .suite-description,
+    .suite-details {
+        text-align: left;
+    }
+    .suite-details {
+        color: #888;
+        font-style: italic;
+    }
+}

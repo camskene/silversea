@@ -1,0 +1,28 @@
+#primary-nav {
+    ul {
+        @include inline-list;
+        float: right;
+    }
+    li {
+        text-align: right;
+        padding: 0 12px 0 0;
+        border-right: 1px solid #d3d3d3;
+        margin: 0 0 0 12px;
+        font-size: 14px;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        span {
+            display: block;
+            color: #7e7e7e;
+        }
+    }
+    .current-menu-item {
+        a, span {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+
+}

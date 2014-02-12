@@ -1,0 +1,61 @@
+#pics {
+    @include clearfix;
+    ul {
+        @include inline-list;
+    }
+    li {
+        float: left;
+        width: 30%;
+        line-height: 21px;
+        &:nth-child(2n) {
+            margin: 0 5%;
+        }
+    }
+}
+
+#big-cta {
+    .page-about & {
+       background-image: none;
+       p {
+           margin: 0 0 20px;
+           font-size: 21px;
+           line-height: 1;
+       }
+       ul {
+            &:before, &:after {
+                content: "";
+                display: block;
+                width: 720px;
+                height: 0;
+                border-top: 1px solid #d3d3d3;
+                margin: 18px auto;
+            }
+            &:before {
+                margin-bottom: 16px;
+            }
+       }
+    }
+}
+
+.about {
+    @include table-layout;
+    margin: 0 0 100px;
+    font-size: 16px;
+    line-height: 30px;
+    .column {
+        width: 550px;
+        vertical-align: middle;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    ul {
+        padding: 0 0 0 21px;
+    }
+    .align-right {
+        text-align: right
+    }
+    .align-left {
+        text-align: left
+    }
+}

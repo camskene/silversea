@@ -1,0 +1,36 @@
+#refer {
+    @include clearfix;
+    padding: 60px 0 48px;
+    ul {
+        @include inline-list;
+
+        li {
+            float: left;
+            width: 30%;
+            line-height: 21px;
+            &:nth-child(2n) {
+                margin: 0 5%;
+            }
+        }
+    }
+    figure {
+        margin: 0 0 1.5em;
+    }
+    h3 {
+        margin: 0 0 1em;
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        &:before {
+            font-size: 32px;
+            margin-right: 16px;
+        }
+    }
+    .more {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #d3d3d3;
+        color: #000;
+        text-decoration: none;
+    }
+}

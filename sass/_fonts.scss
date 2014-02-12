@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'silversea';
+    src:url('fonts/silversea.eot');
+    src:url('fonts/silversea.eot?#iefix') format('embedded-opentype'),
+        url('fonts/silversea.woff') format('woff'),
+        url('fonts/silversea.ttf') format('truetype'),
+        url('fonts/silversea.svg#silversea') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+
+    font-family: 'silversea';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    margin-right: 8px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-office:before {
+    content: "\e600";
+}
+.icon-question-sign:before {
+    content: "\e603";
+}
+.icon-chevron-right:before {
+    content: "\e605";
+}
+.icon-chevron-left:before {
+    content: "\e606";
+}
+.icon-time:before {
+    content: "\e607";
+}
+.icon-calendar-duration:before {
+    content: "\e608";
+}
+.icon-phone:before {
+    content: "\e60a";
+}
+.icon-phone-sign:before {
+    content: "\e60b";
+}
+.icon-ok:before {
+    content: "\e60c";
+}
+.icon-info-sign:before {
+    content: "\e60f";
+}
+.icon-globe:before {
+    content: "\e610";
+}
+.icon-envelope-alt:before {
+    content: "\e611";
+}
+.icon-dollar:before {
+    content: "\e612";
+}
+.icon-play-circle:before {
+    content: "\e614";
+}
+.icon-certificate:before {
+    content: "\e615";
+}
+.icon-caret-down:before {
+    content: "\e616";
+}
+.icon-eye-open:before {
+    content: "\e61b";
+}
+.icon-remove-circle:before {
+    content: "\e61c";
+}
+.icon-remove-sign:before {
+    content: "\e61d";
+}
+.icon-arrow-down:before {
+    content: "\e61e";
+}
+.icon-ship:before {
+    content: "\e601";
+}
+.icon-smile:before {
+    content: "\e604";
+}
+.icon-compass:before {
+    content: "\e602";
+}
+.icon-file-pdf:before {
+    content: "\e609";
+}

@@ -1,0 +1,224 @@
+/*----------------------------------------------------------------
+    Global
+----------------------------------------------------------------*/
+
+* {
+    @include box-sizing(border-box);
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+main .content {
+    width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 1em;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*----------------------------------------------------------------
+    CTA Phone
+----------------------------------------------------------------*/
+
+#big-cta {
+    padding: 60px 0 72px;
+    text-align: center;
+    font-weight: 300;
+    background: url(images/shadow-two.png) no-repeat 50% 0;
+    .home & {
+        padding: 48px 0;
+        background: url(images/shadow-one.png) no-repeat 50% 100%;
+    }
+    span {
+        // display: block;
+        font-size: 18px;
+    }
+    p {
+        margin: 0 0 20px;
+        font-size: 42px;
+        line-height: 1;
+    }
+    ul {
+        @include inline-list;
+        font-size: 30px;
+        li {
+            margin: 0 30px;
+        }
+    }
+}
+
+/*----------------------------------------------------------------
+    Why Book With Us?
+----------------------------------------------------------------*/
+
+#why-book {
+    @include clearfix;
+    padding: 50px 0;
+    margin: 0 auto;
+    background: url(images/shadow-one.png), url(images/shadow-two.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%, 50% 0%;
+
+    h2, h3 {
+        text-align: center;
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: normal;
+        &:before {
+            margin-right: 16px;
+            font-size: 36px;
+        }
+    }
+    ul {
+        @include inline-list;
+        li {
+            float: left;
+            width: 45%;
+            height: 172px;
+            margin: 0 2.5% 0 0;
+            line-height: 21px;
+        }
+        li:nth-child(2n+2) {
+            margin: 0 0 0 2.5%;
+        }
+    }
+}
+
+/*----------------------------------------------------------------
+    Hammer Head
+----------------------------------------------------------------*/
+
+.hammer-head {
+    padding: 36px 0 48px;
+    text-align: center;
+    background: url(images/shadow-one.png) no-repeat 50% 0%;
+
+    h1 {
+        margin: 0 0 14px;
+        font-size: 48px;
+    }
+    h1 + p {
+        width: 900px;
+        margin: 0 auto;
+        font: {
+            weight: 300;
+            size: 24px;
+        }
+    }
+    h1 + p + figure {
+        margin-top: 36px;
+    }
+    h1 + .sub-heading {
+        font-size: 36px;
+    }
+    &.has-divider {
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 540px;
+            height: 0;
+            margin-top: 48px;
+            border-top: 1px solid #d3d3d3;
+        }
+    }
+}
+
+/*----------------------------------------------------------------
+    Tables
+----------------------------------------------------------------*/
+
+.destination-cruises {
+    width: 100%;
+    margin: 0 0 72px;
+    font-size: 12px;
+    thead {
+        background-color: #dadada;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f3f3f3;
+    }
+    td {
+        padding: 20px;
+        white-space: nowrap;
+        width: auto;
+    }
+    td:nth-child(5n) {
+        white-space: normal;
+    }
+    .btn {
+        width: 136px;
+        padding: 5px 10px;
+        border: 3px solid #fff;
+        margin-left: 20px;
+        background-color: #00a3e6;
+        box-shadow: 0 0 1px 0 #222;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.table-info {
+    @include table-layout;
+    margin: 0 0 48px;
+    text-align: center;
+    white-space: nowrap;
+
+    h2 {
+        margin: 0;
+        font: {
+            size: 30px;
+            weight: normal;
+        }
+    }
+    h2 + p {
+        font-size: 18px;
+        color: #828282;
+        font-weight: 300;
+    }
+    ul {
+        padding: 0;
+        padding: 0 0 0 100px;
+        list-style-type: none;
+        text-align: left;
+    }
+    li {
+        float: left;
+        width: 45%;
+        margin: 0 2%;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    span {
+        margin-right: 20px;
+    }
+}
+
+
+.icon-bridge-sailing, .icon-gentleman-hosts, .icon-lecole-des-chefs, .icon-special-offers, .icon-venetian-society {
+    display: inline-block;
+    background: url(images/sprite-available-cruises.png) no-repeat top left;
+}
+.icon-bridge-sailing{ background-position: 0 0; width: 13px; height: 16px; }
+.icon-gentleman-hosts{ background-position: 0 -66px; width: 16px; height: 16px; }
+.icon-lecole-des-chefs{ background-position: 0 -132px; width: 16px; height: 15px; }
+.icon-special-offers{ background-position: 0 -197px; width: 16px; height: 16px; }
+.icon-venetian-society{ background-position: 0 -263px; width: 16px; height: 16px; }

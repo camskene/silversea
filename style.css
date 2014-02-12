@@ -1,0 +1,1351 @@
+/*!
+Theme Name: Silversea
+Author: Happy Fun Corp
+Author URI: http://happyfuncorp.com/
+Description: Custom theme for silverseacruises.in
+*/
+/*----------------------------------------------------------------
+    Clearfix
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Text Ellipsis
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Hide Text
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Box Sizing
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Inline Lists
+----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Table Layout
+----------------------------------------------------------------*/
+/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'silversea';
+  src: url("fonts/silversea.eot");
+  src: url("fonts/silversea.eot?#iefix") format("embedded-opentype"), url("fonts/silversea.woff") format("woff"), url("fonts/silversea.ttf") format("truetype"), url("fonts/silversea.svg#silversea") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'silversea';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  margin-right: 8px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-office:before {
+  content: "\e600"; }
+
+.icon-question-sign:before {
+  content: "\e603"; }
+
+.icon-chevron-right:before {
+  content: "\e605"; }
+
+.icon-chevron-left:before {
+  content: "\e606"; }
+
+.icon-time:before {
+  content: "\e607"; }
+
+.icon-calendar-duration:before {
+  content: "\e608"; }
+
+.icon-phone:before {
+  content: "\e60a"; }
+
+.icon-phone-sign:before {
+  content: "\e60b"; }
+
+.icon-ok:before {
+  content: "\e60c"; }
+
+.icon-info-sign:before {
+  content: "\e60f"; }
+
+.icon-globe:before {
+  content: "\e610"; }
+
+.icon-envelope-alt:before {
+  content: "\e611"; }
+
+.icon-dollar:before {
+  content: "\e612"; }
+
+.icon-play-circle:before {
+  content: "\e614"; }
+
+.icon-certificate:before {
+  content: "\e615"; }
+
+.icon-caret-down:before {
+  content: "\e616"; }
+
+.icon-eye-open:before {
+  content: "\e61b"; }
+
+.icon-remove-circle:before {
+  content: "\e61c"; }
+
+.icon-remove-sign:before {
+  content: "\e61d"; }
+
+.icon-arrow-down:before {
+  content: "\e61e"; }
+
+.icon-ship:before {
+  content: "\e601"; }
+
+.icon-smile:before {
+  content: "\e604"; }
+
+.icon-compass:before {
+  content: "\e602"; }
+
+.icon-file-pdf:before {
+  content: "\e609"; }
+
+/*----------------------------------------------------------------
+    Global
+----------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px; }
+
+main .content {
+  width: 1200px;
+  margin: auto; }
+
+h1, h2, h3, h4 {
+  margin: 0 0 1em;
+  font-weight: 300;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 1.5em; }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+/*----------------------------------------------------------------
+    CTA Phone
+----------------------------------------------------------------*/
+#big-cta {
+  padding: 60px 0 72px;
+  text-align: center;
+  font-weight: 300;
+  background: url(images/shadow-two.png) no-repeat 50% 0; }
+  .home #big-cta {
+    padding: 48px 0;
+    background: url(images/shadow-one.png) no-repeat 50% 100%; }
+  #big-cta span {
+    font-size: 18px; }
+  #big-cta p {
+    margin: 0 0 20px;
+    font-size: 42px;
+    line-height: 1; }
+  #big-cta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 30px; }
+    #big-cta ul li {
+      display: inline-block; }
+    #big-cta ul li {
+      margin: 0 30px; }
+
+/*----------------------------------------------------------------
+    Why Book With Us?
+----------------------------------------------------------------*/
+#why-book {
+  padding: 50px 0;
+  margin: 0 auto;
+  background: url(images/shadow-one.png), url(images/shadow-two.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 50% 0%; }
+  #why-book:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #why-book h2, #why-book h3 {
+    text-align: center;
+    font-size: 42px; }
+  #why-book h3 {
+    font-size: 30px;
+    font-weight: normal; }
+    #why-book h3:before {
+      margin-right: 16px;
+      font-size: 36px; }
+  #why-book ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    #why-book ul li {
+      display: inline-block; }
+    #why-book ul li {
+      float: left;
+      width: 45%;
+      height: 172px;
+      margin: 0 2.5% 0 0;
+      line-height: 21px; }
+    #why-book ul li:nth-child(2n+2) {
+      margin: 0 0 0 2.5%; }
+
+/*----------------------------------------------------------------
+    Hammer Head
+----------------------------------------------------------------*/
+.hammer-head {
+  padding: 36px 0 48px;
+  text-align: center;
+  background: url(images/shadow-one.png) no-repeat 50% 0%; }
+  .hammer-head h1 {
+    margin: 0 0 14px;
+    font-size: 48px; }
+  .hammer-head h1 + p {
+    width: 900px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 24px; }
+  .hammer-head h1 + p + figure {
+    margin-top: 36px; }
+  .hammer-head h1 + .sub-heading {
+    font-size: 36px; }
+  .hammer-head.has-divider:after {
+    content: "";
+    display: inline-block;
+    width: 540px;
+    height: 0;
+    margin-top: 48px;
+    border-top: 1px solid #d3d3d3; }
+
+/*----------------------------------------------------------------
+    Tables
+----------------------------------------------------------------*/
+.destination-cruises {
+  width: 100%;
+  margin: 0 0 72px;
+  font-size: 12px; }
+  .destination-cruises thead {
+    background-color: #dadada;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .destination-cruises tbody tr:nth-child(even) {
+    background-color: #f3f3f3; }
+  .destination-cruises td {
+    padding: 20px;
+    white-space: nowrap;
+    width: auto; }
+  .destination-cruises td:nth-child(5n) {
+    white-space: normal; }
+  .destination-cruises .btn {
+    width: 136px;
+    padding: 5px 10px;
+    border: 3px solid #fff;
+    margin-left: 20px;
+    background-color: #00a3e6;
+    box-shadow: 0 0 1px 0 #222;
+    color: #fff;
+    text-decoration: none; }
+
+.table-info {
+  display: table;
+  width: 100%;
+  margin: 0 0 48px;
+  text-align: center;
+  white-space: nowrap; }
+  .table-info > * {
+    display: table-cell;
+    vertical-align: middle; }
+  .table-info h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal; }
+  .table-info h2 + p {
+    font-size: 18px;
+    color: #828282;
+    font-weight: 300; }
+  .table-info ul {
+    padding: 0;
+    padding: 0 0 0 100px;
+    list-style-type: none;
+    text-align: left; }
+  .table-info li {
+    float: left;
+    width: 45%;
+    margin: 0 2%;
+    font-size: 12px;
+    line-height: 30px; }
+  .table-info span {
+    margin-right: 20px; }
+
+.icon-bridge-sailing, .icon-gentleman-hosts, .icon-lecole-des-chefs, .icon-special-offers, .icon-venetian-society {
+  display: inline-block;
+  background: url(images/sprite-available-cruises.png) no-repeat top left; }
+
+.icon-bridge-sailing {
+  background-position: 0 0;
+  width: 13px;
+  height: 16px; }
+
+.icon-gentleman-hosts {
+  background-position: 0 -66px;
+  width: 16px;
+  height: 16px; }
+
+.icon-lecole-des-chefs {
+  background-position: 0 -132px;
+  width: 16px;
+  height: 15px; }
+
+.icon-special-offers {
+  background-position: 0 -197px;
+  width: 16px;
+  height: 16px; }
+
+.icon-venetian-society {
+  background-position: 0 -263px;
+  width: 16px;
+  height: 16px; }
+
+#skyline {
+  padding: 3px 0;
+  background-color: #d3d3d3; }
+  #skyline:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #skyline .content {
+    display: table;
+    width: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+    #skyline .content > * {
+      display: table-cell;
+      vertical-align: middle; }
+    #skyline .content p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic; }
+    #skyline .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      font-size: 12px; }
+      #skyline .content ul li {
+        display: inline-block; }
+      #skyline .content ul li {
+        margin-left: 60px;
+        text-transform: uppercase; }
+        #skyline .content ul li:before {
+          top: 0; }
+
+#site-header {
+  display: table;
+  width: 100%;
+  width: 1200px;
+  padding: 24px 0;
+  margin: 0 auto; }
+  #site-header > * {
+    display: table-cell;
+    vertical-align: middle; }
+  #site-header h1 {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    float: left;
+    width: 359px;
+    height: 51px;
+    margin: 0;
+    background: url(images/logo-combined.png) no-repeat; }
+    #site-header h1 > a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+
+/*----------------------------------------------------------------
+    Site Footer
+----------------------------------------------------------------*/
+#site-footer {
+  padding: 70px 0;
+  background-color: #efefef; }
+  #site-footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #site-footer h3 {
+    font-size: 24px; }
+  #site-footer .content {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto; }
+  #site-footer .column {
+    float: left;
+    width: 25%; }
+  #site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  #site-footer .learn-more li {
+    line-height: 2em; }
+  #site-footer .learn-more a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold; }
+  #site-footer .contact h4 {
+    margin: 0;
+    font-style: italic; }
+    #site-footer .contact h4 + p {
+      font-size: 18px; }
+
+#tv {
+  position: relative;
+  float: right;
+  width: 45%; }
+  #tv ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    #tv ul li {
+      display: inline-block; }
+    #tv ul li {
+      float: left;
+      width: 156px;
+      text-align: center; }
+  #tv a {
+    color: #000;
+    text-decoration: none; }
+  #tv figure img {
+    margin: 0 0 1em; }
+  #tv .slide-ctrls {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+#goto-top {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  top: -98px;
+  right: 0;
+  height: 18px;
+  padding: 5px 15px;
+  background-color: #525252;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  text-decoration: none; }
+
+#basement {
+  padding: 40px;
+  background-color: #000;
+  text-align: center; }
+  #basement p {
+    margin: 0; }
+  #basement .content {
+    color: #8d8d8d;
+    font-size: 11px; }
+
+#primary-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right; }
+  #primary-nav ul li {
+    display: inline-block; }
+#primary-nav li {
+  text-align: right;
+  padding: 0 12px 0 0;
+  border-right: 1px solid #d3d3d3;
+  margin: 0 0 0 12px;
+  font-size: 14px; }
+  #primary-nav li a {
+    color: #000;
+    text-decoration: none; }
+  #primary-nav li span {
+    display: block;
+    color: #7e7e7e; }
+#primary-nav .current-menu-item a, #primary-nav .current-menu-item span {
+  color: #000;
+  font-weight: bold; }
+
+/*----------------------------------------------------------------
+    Common
+----------------------------------------------------------------*/
+input, textarea, select {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/*----------------------------------------------------------------
+    Plan Voyage
+----------------------------------------------------------------*/
+#plan-voyage {
+  position: relative;
+  margin: -42px auto 0;
+  z-index: 1000; }
+  #plan-voyage form {
+    display: table;
+    width: 100%;
+    width: auto;
+    margin: 0 auto;
+    background: transparent; }
+    #plan-voyage form > * {
+      display: table-cell;
+      vertical-align: middle; }
+    #plan-voyage form p {
+      margin: 10px 0;
+      font-size: 18px;
+      line-height: 1; }
+    #plan-voyage form > * {
+      padding: 0 10px;
+      background-color: #fff; }
+      #plan-voyage form > *:first-child, #plan-voyage form > *:last-child {
+        padding: 0 20px;
+        border-radius: 4px 0 0 4px; }
+      #plan-voyage form > *:last-child {
+        border-radius: 0 4px 4px 0; }
+
+/*----------------------------------------------------------------
+    Lowest Rates
+----------------------------------------------------------------*/
+#lowest-rates {
+  padding: 48px 0 72px;
+  text-align: center; }
+  #lowest-rates h2 {
+    margin: 0 0 10px;
+    font-size: 36px; }
+  #lowest-rates h2 + p {
+    font-size: 24px;
+    font-weight: 300; }
+  #lowest-rates form {
+    display: table;
+    width: 100%;
+    width: auto;
+    margin: 0 auto; }
+    #lowest-rates form > * {
+      display: table-cell;
+      vertical-align: middle; }
+  #lowest-rates input {
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    width: 300px;
+    font-size: 18px;
+    color: #a1a1a1; }
+    #lowest-rates input:focus {
+      color: #000;
+      outline: 0; }
+  #lowest-rates [type="submit"] {
+    width: 136px;
+    padding: 5px;
+    border: 3px solid #fff;
+    margin-left: 20px;
+    background-color: #00a3e6;
+    box-shadow: 0 0 1px 0 #222;
+    color: #fff; }
+
+/*----------------------------------------------------------------
+    Hero
+----------------------------------------------------------------*/
+#hero {
+  position: relative; }
+  #hero .ctrl {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer; }
+    #hero .ctrl > a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    #hero .ctrl:before {
+      position: relative;
+      display: block;
+      width: 100%;
+      font-size: 30px;
+      line-height: 55px;
+      text-align: center; }
+  #hero .slide-next {
+    right: 20px; }
+    #hero .slide-next:before {
+      right: -2px; }
+  #hero .slide-previous {
+    left: 20px; }
+    #hero .slide-previous:before {
+      left: -2px; }
+
+/*----------------------------------------------------------------
+    TV
+----------------------------------------------------------------*/
+#tv {
+  position: relative; }
+  #tv .slide-ctrls {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  #tv .ctrl {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #524242;
+    border-radius: 50%;
+    cursor: pointer; }
+    #tv .ctrl > a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    #tv .ctrl:before {
+      display: inline-block;
+      width: 100%;
+      font-size: 18px;
+      color: #524242;
+      line-height: 35px;
+      text-align: center; }
+  #tv .slide-next:before {
+    right: -1px; }
+  #tv .slide-previous:before {
+    left: -1px; }
+
+#refer {
+  padding: 60px 0 48px; }
+  #refer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #refer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    #refer ul li {
+      display: inline-block; }
+    #refer ul li {
+      float: left;
+      width: 30%;
+      line-height: 21px; }
+      #refer ul li:nth-child(2n) {
+        margin: 0 5%; }
+  #refer figure {
+    margin: 0 0 1.5em; }
+  #refer h3 {
+    margin: 0 0 1em;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal; }
+    #refer h3:before {
+      font-size: 32px;
+      margin-right: 16px; }
+  #refer .more {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #d3d3d3;
+    color: #000;
+    text-decoration: none; }
+
+/*----------------------------------------------------------------
+    Ships
+----------------------------------------------------------------*/
+#ships-nav {
+  padding: 21px 0;
+  border-top: 1px solid #d3d3d3; }
+  #ships-nav ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+    #ships-nav ul > * {
+      display: table-cell;
+      vertical-align: middle; }
+  #ships-nav a {
+    text-decoration: none;
+    color: #000; }
+
+#ships .ship:after {
+  content: "";
+  display: table;
+  clear: both; }
+#ships .ship-image {
+  padding: 9px;
+  border: 1px solid #d3d3d3; }
+#ships .ship-info {
+  float: left;
+  width: 400px;
+  padding: 0 60px;
+  text-align: center; }
+  #ships .ship-info .ship-title {
+    margin: 0;
+    font-size: 42px;
+    font-style: italic; }
+    #ships .ship-info .ship-title:before {
+      content: "";
+      display: block;
+      height: 30px;
+      width: 1px;
+      margin: 0 auto;
+      background-color: #d3d3d3; }
+  #ships .ship-info .toggle-ship-cruises {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 8px 30px 8px 12px;
+    border: 1px solid #d3d3d3;
+    margin: 0 0 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px; }
+    #ships .ship-info .toggle-ship-cruises span {
+      display: inline-block;
+      padding: 4px 12px;
+      margin-right: 18px;
+      background-color: #00a3e6;
+      color: #fff; }
+  #ships .ship-info dl, #ships .ship-info dt, #ships .ship-info dd {
+    padding: 0;
+    margin: 0; }
+  #ships .ship-info dl {
+    margin: 0 0 24px; }
+  #ships .ship-info dt {
+    padding: 0 0 14px;
+    margin: 0 0 14px;
+    font-size: 18px;
+    border-bottom: 1px solid #d3d3d3; }
+  #ships .ship-info dd {
+    margin: 0 0 8px;
+    text-align: left;
+    text-indent: 10px; }
+    #ships .ship-info dd span {
+      display: inline-block;
+      width: 50%;
+      color: #6c6c6c; }
+  #ships .ship-info .icon-file-pdf {
+    text-decoration: none;
+    color: #4f7999;
+    text-transform: uppercase;
+    font-size: 12px; }
+#ships .ship-description {
+  float: right;
+  width: 800px;
+  padding: 48px 30px;
+  font-size: 16px;
+  line-height: 26px; }
+
+.ship-cruises {
+  display: none;
+  width: 1040px;
+  margin: 0 auto;
+  border: 14px solid rgba(255, 255, 255, 0.4); }
+  .ship-cruises section {
+    padding: 35px;
+    background-color: #fff; }
+
+#destinations .row {
+  margin: 0 0 48px; }
+  #destinations .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+#destinations section {
+  float: left;
+  width: 360px; }
+  #destinations section:nth-child(3n+2) {
+    margin: 0 22px; }
+  #destinations section > a {
+    display: block;
+    text-decoration: none;
+    color: #000; }
+    #destinations section > a figure {
+      transition: all 0.2s linear; }
+    #destinations section > a:hover > figure {
+      -webkit-transform: scale(1.04);
+      transform: scale(1.04); }
+#destinations h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+#destinations figure {
+  margin: 0 0 18px; }
+#destinations .description {
+  padding: 0 0 0 3px; }
+
+#destinations-single {
+  width: 940px;
+  margin: 0 auto; }
+  #destinations-single .description {
+    margin: 0 0 72px;
+    font-size: 16px;
+    line-height: 24px; }
+    #destinations-single .description:before {
+      content: "";
+      display: block;
+      width: 720px;
+      height: 0;
+      margin: 0 auto 36px;
+      border-top: 1px solid #d3d3d3; }
+
+#life-onboard .row {
+  margin: 0 0 48px; }
+  #life-onboard .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+#life-onboard section {
+  float: left;
+  width: 560px;
+  margin: 0 20px; }
+#life-onboard figure, #life-onboard .sub-heading {
+  margin: 0 0 21px;
+  line-height: 1; }
+#life-onboard h3 {
+  margin: 0 0 5px;
+  font-size: 30px; }
+#life-onboard h3 + .sub-heading {
+  font-weight: 300;
+  font-size: 21px; }
+#life-onboard .description {
+  line-height: 21px; }
+
+#pics:after {
+  content: "";
+  display: table;
+  clear: both; }
+#pics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #pics ul li {
+    display: inline-block; }
+#pics li {
+  float: left;
+  width: 30%;
+  line-height: 21px; }
+  #pics li:nth-child(2n) {
+    margin: 0 5%; }
+
+.page-about #big-cta {
+  background-image: none; }
+  .page-about #big-cta p {
+    margin: 0 0 20px;
+    font-size: 21px;
+    line-height: 1; }
+  .page-about #big-cta ul:before, .page-about #big-cta ul:after {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 0;
+    border-top: 1px solid #d3d3d3;
+    margin: 18px auto; }
+  .page-about #big-cta ul:before {
+    margin-bottom: 16px; }
+
+.about {
+  display: table;
+  width: 100%;
+  margin: 0 0 100px;
+  font-size: 16px;
+  line-height: 30px; }
+  .about > * {
+    display: table-cell;
+    vertical-align: middle; }
+  .about .column {
+    width: 550px;
+    vertical-align: middle; }
+  .about h2 {
+    font-size: 36px; }
+  .about ul {
+    padding: 0 0 0 21px; }
+  .about .align-right {
+    text-align: right; }
+  .about .align-left {
+    text-align: left; }
+
+.itinerary-header {
+  padding: 36px 0 48px;
+  text-align: center;
+  background: url(images/shadow-one.png) no-repeat 50% 0%;
+  text-align: center; }
+  .itinerary-header .category {
+    margin: 0;
+    font-size: 24px; }
+  .itinerary-header .route {
+    margin: 14px 0;
+    line-height: 1;
+    font-size: 36px;
+    font-weight: 300; }
+  .itinerary-header .voyage-id {
+    font-size: 12px; }
+  .itinerary-header .details {
+    display: table;
+    width: 100%;
+    width: 80%;
+    padding: 14px 0;
+    border: 1px solid #d3d3d3;
+    border-width: 1px 0;
+    margin: 0 auto 18px;
+    text-align: center; }
+    .itinerary-header .details > * {
+      display: table-cell;
+      vertical-align: middle; }
+    .itinerary-header .details li {
+      width: 33%;
+      vertical-align: middle; }
+      .itinerary-header .details li p {
+        display: inline-block;
+        position: relative;
+        padding-left: 42px;
+        margin: 0;
+        font-size: 21px; }
+      .itinerary-header .details li p:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-right: 0;
+        font-size: 36px;
+        vertical-align: top; }
+      .itinerary-header .details li span {
+        display: block;
+        font-size: 11px;
+        text-align: left;
+        color: #7f7f7f;
+        text-transform: uppercase; }
+
+.itinerary h2 {
+  text-align: center;
+  font-size: 36px; }
+.itinerary table {
+  width: 720px;
+  margin: 0 auto 100px; }
+  .itinerary table thead {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .itinerary table tr {
+    border: 1px solid #e6e6e6;
+    border-width: 1px 0 0; }
+    .itinerary table tr td {
+      padding: 12px 0;
+      font-size: 14px; }
+    .itinerary table tr td:first-child {
+      padding-left: 30px; }
+  .itinerary table thead tr:first-child {
+    border: 0; }
+
+.suites {
+  margin: 0 0 60px; }
+  .suites h2 {
+    text-align: center;
+    font-size: 36px; }
+  .suites .row {
+    margin: 0 0 48px;
+    text-align: center; }
+  .suites section {
+    display: inline-block;
+    width: 340px;
+    vertical-align: top; }
+  .suites section:nth-child(3n+2) {
+    margin: 0 40px; }
+  .suites figure {
+    padding: 9px;
+    border: 1px solid #d3d3d3; }
+  .suites .request-quote {
+    position: relative;
+    top: -20px;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 6px 12px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #00a3e6;
+    text-decoration: none;
+    text-align: center; }
+  .suites .suite-name {
+    font-size: 24px;
+    text-align: center; }
+  .suites .suite-description,
+  .suites .suite-details {
+    text-align: left; }
+  .suites .suite-details {
+    color: #888;
+    font-style: italic; }

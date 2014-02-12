@@ -1,0 +1,118 @@
+/*----------------------------------------------------------------
+    Ships
+----------------------------------------------------------------*/
+
+#ships-nav {
+    padding: 21px 0;
+    border-top: 1px solid #d3d3d3;
+    ul {
+        @include table-layout;
+        table-layout: fixed;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+#ships {
+    .ship {
+        @include clearfix;
+    }
+    .ship-image {
+        padding: 9px;
+        border: 1px solid #d3d3d3;
+    }
+    .ship-info {
+        float: left;
+        width: 400px;
+        padding: 0 60px;
+        text-align: center;
+        .ship-title {
+            margin: 0;
+            font: {
+                size: 42px;
+                style: italic;
+            }
+            &:before {
+                content: "";
+                display: block;
+                height: 30px;
+                width: 1px;
+                margin: 0 auto;
+                background-color: #d3d3d3;
+            }
+        }
+        .toggle-ship-cruises {
+            @include box-sizing(content-box);
+            display: inline-block;
+            padding: 8px 30px 8px 12px;
+            border: 1px solid #d3d3d3;
+            margin: 0 0 16px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            span {
+                display: inline-block;
+                padding: 4px 12px;
+                margin-right: 18px;
+                background-color: #00a3e6;
+                color: #fff;
+            }
+        }
+        dl,dt,dd {
+            padding: 0;
+            margin: 0;
+        }
+        dl {
+            margin: 0 0 24px;
+        }
+        dt {
+            padding: 0 0 14px;
+            margin: 0 0 14px;
+            font-size: 18px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        dd {
+            margin: 0 0 8px;
+            text: {
+                align: left;
+                indent: 10px;
+            }
+            span {
+                display: inline-block;
+                width: 50%;
+                color: #6c6c6c;
+            }
+        }
+        .icon-file-pdf {
+            text-decoration: none;
+            color: #4f7999;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    }
+    .ship-description {
+        float: right;
+        width: 800px;
+        padding: 48px 30px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.ship-cruises {
+    display: none;
+    width: 1040px;
+    margin: 0 auto;
+    border: 14px solid rgba(255,255,255, 0.4);
+    section {
+        padding: 35px;
+        background-color: #fff;
+
+    }
+}
